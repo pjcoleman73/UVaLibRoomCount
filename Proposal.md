@@ -7,7 +7,7 @@ NOTE: This may already exist, but I don’t know my way around Github to know fo
 http://measurethefuture.net
 https://github.com/MeasureTheFuture
 
-Stage I
+## Stage I
 Build Raspberry Pi people counter.
 Keep running tally for people entering and exiting a given room.
 Next Stages (not sure the logical order)
