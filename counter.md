@@ -17,7 +17,10 @@
 
 # Tutorials
 * GPIO pins: https://www.raspberrypi.org/documentation/usage/gpio-plus-and-raspi2/
-* https://www.raspberrypi.org/learning/laser-tripwire/worksheet/
+* Photo resistor
+  * https://www.raspberrypi.org/learning/laser-tripwire/worksheet/
+* Laser
+  * http://www.instructables.com/id/Raspberry-Pi-Laser-Security-System/
 
 # Sudo code
 ## Sudo code for single trip wire
