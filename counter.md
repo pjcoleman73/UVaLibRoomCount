@@ -21,6 +21,7 @@
   * https://www.raspberrypi.org/learning/laser-tripwire/worksheet/
 * Laser
   * http://www.instructables.com/id/Raspberry-Pi-Laser-Security-System/
+  * https://www.youtube.com/watch?v=pO1dTkLrod8
 
 # Sudo code
 ## Sudo code for single trip wire
