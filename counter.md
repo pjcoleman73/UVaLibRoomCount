@@ -59,21 +59,24 @@ while True:
 from gpiozero import LightSensor 
 from time import sleep, time
 
-ldrA = LightSensor(4)  # alter number if using a different pin
-ldrB = LightSensor(7)  # alter number if using a different pin
+lzrA = LightSensor(4)  # alter number if using a different pin
+lzrB = LightSensor(7)  # alter number if using a different pin
 
-while True:
-    sleep(0.1)
-    if ldrA.value < 0.5:  # adjust this to make the circuit more or less sensitive
-        Atime = time.time() * 1000 # to get miliseconds
-    if ldrB.value < 0.5:
-        Btime = time.time() * 1000
+def lzrAtrip():
+    aTime = time.time()
 
-    V = Atime - Btime
+def lzrBtrip():
+    bTime = time.time()
 
-    if V < 0 
+lzrA.when_dark = lzrAtrip
+lzrB.when_dark = lzrBtrip
+
+if aTime and bTime:
+    V = aTime - bTime
+
+    if V < 0:
       # add 1 to database
-    else
+    else:
       # subtract 1 from database
       
 
