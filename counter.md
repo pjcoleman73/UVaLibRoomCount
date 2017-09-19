@@ -1,9 +1,22 @@
 # Diagram of trip wires A and B
 
 ```
-  A    -   B
-  2    -   1  <-  = positive OUT
-  1    -   2  ->  = negative IN
+           The Room
+_                            __
+D |                       B{| D
+O |                         | O  
+O |                         | O
+R |                       A{| R
+--                          --
+
+        Out of the Room
+
+
+  IN =>     A       ->       B
+         14:30:27    -    14:30:30   =  (negative)
+
+            A       <-       B
+ OUT <=  12:22:22    -    12:22:20   =  (positive)
 ```
 
 
@@ -46,17 +59,26 @@ while True:
 from gpiozero import LightSensor 
 from time import sleep, time
 
-ldrA = LightSensor(4)  # alter if using a different pin
-ldrB = LightSensor(7)  # alter if using a different pin
+lzrA = LightSensor(4)  # alter number if using a different pin
+lzrB = LightSensor(7)  # alter number if using a different pin
 
-while True:
-    sleep(0.1)
-    if ldrA.value < 0.5:  # adjust this to make the circuit more or less sensitive
-        Atime = time.time() * 1000 # to get miliseconds
-    if ldrB.value < 0.5:
-        Btime = time.time() * 1000
-    V = Atime - Btime
-    if V is negative then IN, else OUT
+def lzrAtrip():
+    aTime = time.time()
+
+def lzrBtrip():
+    bTime = time.time()
+
+lzrA.when_dark = lzrAtrip
+lzrB.when_dark = lzrBtrip
+
+if aTime and bTime:
+    V = aTime - bTime
+
+    if V < 0:
+      # add 1 to database
+    else:
+      # subtract 1 from database
+      
 
 ```
 
