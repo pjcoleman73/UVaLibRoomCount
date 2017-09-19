@@ -2,9 +2,18 @@ from time import sleep
 from gpiozero import LightSensor
 laserA = LightSensor(4)
 laserB = LightSensor(17)
-#laserA.wait_for_dark()
-#print("Darkness detected")
-while True:
-	sleep(0.1)
-	#print "laserA: %d laserB: %d" % (laserA.value, laserB.value)
-	print(laserA.value)
+def laserAtripped():
+    atime = time.time()
+
+def laserBtripped():
+    btime = time.time()
+
+laserA.when_dark = laserAtripped
+laserB.when_dark = laserBtripped
+
+if atime and btime
+    v = atime - btime
+if v < 0
+    add to database
+else
+    subtract from database
