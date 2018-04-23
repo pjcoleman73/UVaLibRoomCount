@@ -1,6 +1,10 @@
 # UVaLibRoomCount
 The purpose of this project is to develop an anonymized, low-cost, networked tool for providing a live count of people in a study space at any given time. The purpose is to allow students to waste less time finding a study space with empty seats around Grounds and more time actually studying. 
 
+# CURRENT STATUS
+This project is not the primary (or even secondary) job function for either Ammon or PJ, but we are both interested in making it a reality. With not much time to dedicate, progress has been slow. 
+We began by experimenting with using lasers and photo resistors to create two "laser trip wires" working in tandum to determine whether a specific object had entered or exited a given threshold. 
+We moved on to experimenting with OpenCV in Python using a webcam to input the visual data. We have followed multiple tutorials and have encoutered numerous problems with each. 
 
 # Tutorials
 
