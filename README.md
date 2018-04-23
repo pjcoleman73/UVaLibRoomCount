@@ -1,6 +1,5 @@
 # UVaLibRoomCount
-figure out a way to provide patrons with a live count of study rooms at UVa Libraries
-This is a change to the file.
+The purpose of this project is to develop an anonymized, low-cost, networked tool for providing a live count of people in a study space at any given time. The purpose is to allow students to waste less time finding a study space with empty seats around Grounds and more time actually studying. 
 
 
 # Tutorials
