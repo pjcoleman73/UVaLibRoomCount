@@ -6,6 +6,11 @@ This project is not the primary (or even secondary) job function for either Ammo
 We began by experimenting with using lasers and photo resistors to create two "laser trip wires" working in tandum to determine whether a specific object had entered or exited a given threshold. 
 We moved on to experimenting with OpenCV in Python using a webcam to input the visual data. We have followed multiple tutorials and have encoutered numerous problems with each. 
 
+The most recent files are in the 'video' folder. These files play around with different options in attempt to solve the following issues we had (they are unresolved):
+- false counting at the beginning of the script running
+- two people walking abreast are seen as one object rather than two
+- false positive counts, and untracked counts.
+
 # Tutorials
 
 - Install openCV on Raspberry Pi Zero W
